@@ -152,7 +152,7 @@ try {
 }
 catch {
     # log the error
-    Write-LogInfo -LogPath $sLogFile -Message "Something unexpected occured while trying to execute a defrag on the system drive"
+    Write-LogInfo -LogPath $sLogFile -Message "Something unexpected occured while trying to execute a SDelete on the system drive"
     Write-LogError -LogPath $sLogFile -Message $_.Exception.GetType().FullName
     Write-LogError -LogPath $sLogFile -Message $_.Exception.Message
 }
